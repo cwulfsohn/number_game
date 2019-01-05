@@ -6,6 +6,7 @@ import random
 @app.route('/')
 def home():
     try:
+	print "test"
         session['temp'] == 1
     except:
         session['guess'] = random.randrange(0,101)
